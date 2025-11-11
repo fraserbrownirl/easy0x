@@ -23,7 +23,7 @@ const SocialButton = ({ platform }: SocialButtonProps) => {
         ) : (
           <img src={blueskyIcon} alt="Bluesky" className="w-8 h-8 brightness-0 invert" />
         )}
-        <span>{isX ? "Share on X" : "Share on Bluesky"}</span>
+        <span>{isX ? "Share on Twitter" : "Share on Bluesky"}</span>
       </span>
     </Button>
   );
