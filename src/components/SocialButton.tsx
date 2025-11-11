@@ -18,7 +18,7 @@ const SocialButton = ({ platform }: SocialButtonProps) => {
     >
       <span className="relative z-10 flex items-center gap-4">
         {isX ? (
-          <img src={xLogo} alt="X/Twitter" className="w-16 h-16 brightness-0 invert" />
+          <img src={xLogo} alt="X/Twitter" className="w-8 h-8 brightness-0 invert" />
         ) : (
           <img src={blueskyIcon} alt="Bluesky" className="w-8 h-8 brightness-0 invert" />
         )}
