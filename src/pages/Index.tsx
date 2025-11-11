@@ -176,9 +176,111 @@ const Index = () => {
 
       {/* Footer */}
       <footer className="border-t border-border bg-card">
-        <div className="container mx-auto px-4 py-8">
-          <div className="text-center text-muted-foreground">
-            <p>&copy; 2024 easyOx. Making blockchain addresses easy to remember.</p>
+        <div className="container mx-auto px-4 py-12 md:py-16">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
+              {/* Product & Usage */}
+              <div>
+                <h3 className="font-bold text-foreground mb-4">Product & Usage</h3>
+                <ul className="space-y-3">
+                  <li>
+                    <a href="https://rolod0x.io/" className="text-muted-foreground hover:text-primary transition-colors">
+                      Overview / Home
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://rolod0x.io/docs/install.html" className="text-muted-foreground hover:text-primary transition-colors">
+                      Installation Guide
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://rolod0x.io/docs/user-manual.html" className="text-muted-foreground hover:text-primary transition-colors">
+                      User Manual
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://rolod0x.io/docs/FAQ.html" className="text-muted-foreground hover:text-primary transition-colors">
+                      FAQ
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Development & Code */}
+              <div>
+                <h3 className="font-bold text-foreground mb-4">Development & Code</h3>
+                <ul className="space-y-3">
+                  <li>
+                    <a href="https://github.com/rolod0x/rolod0x" className="text-muted-foreground hover:text-primary transition-colors">
+                      GitHub Repository
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://rolod0x.io/docs/dev-guide.html" className="text-muted-foreground hover:text-primary transition-colors">
+                      Developer Guide
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/rolod0x/rolod0x/projects/1" className="text-muted-foreground hover:text-primary transition-colors">
+                      Project Roadmap
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Legal & Transparency */}
+              <div>
+                <h3 className="font-bold text-foreground mb-4">Legal & Transparency</h3>
+                <ul className="space-y-3">
+                  <li>
+                    <a href="https://rolod0x.io/docs/privacy-policy.md" className="text-muted-foreground hover:text-primary transition-colors">
+                      Privacy Policy
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://rolod0x.io/docs/security-analysis.html" className="text-muted-foreground hover:text-primary transition-colors">
+                      Security Analysis
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://rolod0x.io/LICENSE.txt" className="text-muted-foreground hover:text-primary transition-colors">
+                      Project License
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Support & Contributions */}
+              <div>
+                <h3 className="font-bold text-foreground mb-4">Support & Contributions</h3>
+                <ul className="space-y-3">
+                  <li>
+                    <a href="https://rolod0x.io/docs/support.html" className="text-muted-foreground hover:text-primary transition-colors">
+                      Support Page
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://giveth.io/project/rolod0x" className="text-muted-foreground hover:text-primary transition-colors">
+                      Donate via Giveth
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://explorer.gitcoin.co/#/round/42161/25/89" className="text-muted-foreground hover:text-primary transition-colors">
+                      Donate via Gitcoin Grants
+                    </a>
+                  </li>
+                  <li>
+                    <a href="bitcoin:bc1quuspvrjepx63k5hpydwqkf6nmtt9eqm86y8w8a" className="text-muted-foreground hover:text-primary transition-colors break-all">
+                      Bitcoin Donation Address
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="mt-12 pt-8 border-t border-border text-center text-muted-foreground">
+              <p>&copy; 2024 easyOx. Making blockchain addresses easy to remember.</p>
+            </div>
           </div>
         </div>
       </footer>
