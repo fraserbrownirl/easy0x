@@ -1,5 +1,5 @@
-import { ArrowRight } from "lucide-react";
 import DownloadButton from "@/components/DownloadButton";
+import SocialButton from "@/components/SocialButton";
 import FeatureCard from "@/components/FeatureCard";
 import heroBanner from "@/assets/hero-banner.jpeg";
 import addressBook from "@/assets/usecase-addressbook.jpeg";
@@ -14,7 +14,7 @@ const Index = () => {
         <nav className="flex items-center justify-between">
           <div className="text-3xl font-bold">
             <span className="text-foreground">easy</span>
-            <span className="text-primary">0x</span>
+            <span className="text-primary">0x.com</span>
           </div>
         </nav>
       </header>
@@ -22,20 +22,16 @@ const Index = () => {
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-12 md:py-20">
         <div className="max-w-6xl mx-auto">
-          <div className="relative rounded-2xl overflow-hidden shadow-2xl mb-8 animate-in fade-in slide-in-from-bottom-4 duration-700">
+          <h1 className="text-3xl md:text-5xl font-bold text-center mb-8 animate-in fade-in slide-in-from-bottom-4 duration-700">
+            <span className="text-foreground">Blockchain Addresses to Names</span>{" "}
+            <span className="text-primary">in a simple Address Book</span>
+          </h1>
+          <div className="relative rounded-2xl overflow-hidden shadow-2xl animate-in fade-in slide-in-from-bottom-4 duration-700 delay-150">
             <img 
               src={heroBanner} 
               alt="easyOx makes blockchain addresses human-readable - comparing simple names with complex hex addresses"
               className="w-full h-auto"
             />
-          </div>
-          <div className="text-center space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-150">
-            <h1 className="text-4xl md:text-6xl font-bold text-foreground leading-tight">
-              Make Blockchain Addresses <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">Human-Readable</span>
-            </h1>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Stop struggling with long hexadecimal addresses. easyOx transforms them into memorable names you can actually remember.
-            </p>
           </div>
         </div>
       </section>
@@ -61,11 +57,12 @@ const Index = () => {
         <div className="max-w-6xl mx-auto space-y-16">
           {/* Use Case 1 */}
           <div className="animate-in fade-in slide-in-from-bottom-4 duration-700 delay-500">
-            <FeatureCard title="Find anyone's address in seconds">
+            <FeatureCard title="">
               <div className="space-y-6">
-                <p className="text-muted-foreground text-lg">
-                  Our built-in address book lets you search for contacts using simple, memorable names instead of copying and pasting long hex strings.
-                </p>
+                <h3 className="text-3xl md:text-4xl font-bold">
+                  <span className="text-foreground">Find anyone's address</span>{" "}
+                  <span className="text-primary">in seconds</span>
+                </h3>
                 <div className="rounded-xl overflow-hidden border border-border shadow-lg">
                   <img 
                     src={addressBook} 
@@ -79,15 +76,16 @@ const Index = () => {
 
           {/* Use Case 2 */}
           <div className="animate-in fade-in slide-in-from-bottom-4 duration-700 delay-700">
-            <FeatureCard title="Right-click to rename addresses on sites">
+            <FeatureCard title="">
               <div className="space-y-6">
-                <p className="text-muted-foreground text-lg">
-                  Transform any blockchain address on any website with a simple right-click. Never lose track of important wallets again.
-                </p>
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div className="space-y-3">
-                    <div className="flex items-center gap-2 text-muted-foreground font-semibold">
-                      <span className="w-8 h-8 rounded-full bg-muted flex items-center justify-center text-sm">1</span>
+                <h3 className="text-3xl md:text-4xl font-bold mb-8">
+                  <span className="text-foreground">Right-click to rename addresses</span>{" "}
+                  <span className="text-accent">on sites</span>
+                </h3>
+                <div className="space-y-8">
+                  <div className="space-y-4">
+                    <div className="flex items-center gap-2 text-muted-foreground font-semibold text-lg">
+                      <span className="w-10 h-10 rounded-full bg-muted flex items-center justify-center">1</span>
                       <span>Before</span>
                     </div>
                     <div className="rounded-lg overflow-hidden border border-border shadow-md">
@@ -98,11 +96,10 @@ const Index = () => {
                       />
                     </div>
                   </div>
-                  <div className="space-y-3">
-                    <div className="flex items-center gap-2 text-primary font-semibold">
-                      <span className="w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-sm">2</span>
+                  <div className="space-y-4">
+                    <div className="flex items-center gap-2 text-primary font-semibold text-lg">
+                      <span className="w-10 h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center">2</span>
                       <span>After</span>
-                      <ArrowRight className="w-5 h-5" />
                     </div>
                     <div className="rounded-lg overflow-hidden border border-primary/50 shadow-lg ring-2 ring-primary/20">
                       <img 
@@ -123,14 +120,14 @@ const Index = () => {
       <section className="container mx-auto px-4 py-16 md:py-24">
         <div className="max-w-4xl mx-auto text-center space-y-8 bg-gradient-to-r from-primary/10 to-accent/10 rounded-3xl p-12 border border-primary/20">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-            Ready to simplify your blockchain experience?
+            Want to help simplify blockchain?
           </h2>
           <p className="text-lg text-muted-foreground">
-            Join thousands of users who've made the switch to easy0x
+            Like and share easyOx on your socials
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <DownloadButton browser="chrome" />
-            <DownloadButton browser="firefox" />
+            <SocialButton platform="x" />
+            <SocialButton platform="bluesky" />
           </div>
         </div>
       </section>

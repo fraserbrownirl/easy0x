@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Chrome, Download } from "lucide-react";
+import { Download } from "lucide-react";
 
 interface DownloadButtonProps {
   browser: "chrome" | "firefox";
@@ -13,16 +13,37 @@ const DownloadButton = ({ browser }: DownloadButtonProps) => {
       size="lg"
       className="group relative overflow-hidden bg-gradient-to-r from-primary to-accent hover:shadow-xl transition-all duration-300 text-primary-foreground border-0"
     >
-      <span className="relative z-10 flex items-center gap-2">
+      <span className="relative z-10 flex items-center gap-3">
         {isChrome ? (
-          <Chrome className="w-5 h-5" />
+          <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="10" fill="#4285F4"/>
+            <circle cx="12" cy="12" r="7" fill="white"/>
+            <circle cx="12" cy="12" r="4.5" fill="#4285F4"/>
+            <path d="M12 2C6.477 2 2 6.477 2 12h10V2z" fill="#EA4335"/>
+            <path d="M2 12c0 5.523 4.477 10 10 10l5-8.66H2z" fill="#34A853"/>
+            <path d="M22 12c0-5.523-4.477-10-10-10l-5 8.66H22z" fill="#FBBC04"/>
+          </svg>
         ) : (
-          <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M8.824 7.287c.008 0 .004 0 0 0zm-2.8-1.4c.006 0 .003 0 0 0zm16.754 2.161c-.505-1.215-1.53-2.528-2.333-2.943.654 1.283 1.033 2.57 1.177 3.53l.002.02c-1.314-3.278-3.544-4.6-5.366-7.477-.091-.147-.184-.292-.273-.446a3.545 3.545 0 01-.13-.24 2.118 2.118 0 01-.172-.46.03.03 0 00-.027-.03.038.038 0 00-.021 0l-.006.001a.037.037 0 00-.01.005L15.624 0c-2.585 1.515-3.657 4.168-3.932 5.856a6.197 6.197 0 00-2.305.587.297.297 0 00-.147.37c.057.162.24.24.396.17a5.622 5.622 0 012.008-.523l.067-.005a5.847 5.847 0 011.957.222l.095.03a5.816 5.816 0 01.616.228c.08.036.16.073.238.112l.107.055a5.835 5.835 0 01.368.211 5.953 5.953 0 012.034 2.104c-.62-.437-1.733-.868-2.803-.681 4.183 2.09 3.06 9.292-2.737 9.02a5.164 5.164 0 01-1.513-.292 4.42 4.42 0 01-.538-.232c-1.42-.735-2.593-2.121-2.74-3.806 0 0 .537-2 3.845-2 .357 0 1.38-.998 1.398-1.287-.005-.095-2.029-.9-2.817-1.677-.422-.416-.622-.616-.8-.767a3.47 3.47 0 00-.301-.227 5.388 5.388 0 01-.032-2.842c-1.195.544-2.124 1.403-2.8 2.163h-.006c-.46-.584-.428-2.51-.402-2.913-.006-.025-.343.176-.389.206-.406.29-.787.616-1.136.974-.397.403-.76.839-1.085 1.303a9.858 9.858 0 00-1.245 2.066 9.994 9.994 0 00-.559 2.589 9.968 9.968 0 00.103 2.598c.214.866.55 1.694 1.002 2.454a10.024 10.024 0 001.592 2.185 10.03 10.03 0 002.028 1.706c.665.408 1.387.744 2.147.998a10.045 10.045 0 002.457.53h.026c.277.015.555.023.835.023.306 0 .613-.008.919-.024a10.06 10.06 0 002.5-.537 10.03 10.03 0 002.13-1.017 10.03 10.03 0 003.415-3.34c.288-.479.536-.977.741-1.495a10.026 10.026 0 00.543-2.429 9.99 9.99 0 00-.015-1.842 9.99 9.99 0 00-.289-1.812 9.993 9.993 0 00-.786-2.112z"/>
+          <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="10" fill="url(#firefox-gradient)"/>
+            <path d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2z" fill="url(#firefox-gradient2)"/>
+            <path d="M12 4c-4.418 0-8 3.582-8 8s3.582 8 8 8 8-3.582 8-8-3.582-8-8-8zm0 2c3.314 0 6 2.686 6 6s-2.686 6-6 6-6-2.686-6-6 2.686-6 6-6z" fill="#FF9500"/>
+            <ellipse cx="12" cy="10" rx="6" ry="5" fill="#FF5722"/>
+            <path d="M12 8c-2.21 0-4 1.79-4 4h8c0-2.21-1.79-4-4-4z" fill="#FFC107"/>
+            <defs>
+              <linearGradient id="firefox-gradient" x1="12" y1="2" x2="12" y2="22" gradientUnits="userSpaceOnUse">
+                <stop stopColor="#FF9500"/>
+                <stop offset="1" stopColor="#FF5722"/>
+              </linearGradient>
+              <linearGradient id="firefox-gradient2" x1="2" y1="12" x2="22" y2="12" gradientUnits="userSpaceOnUse">
+                <stop stopColor="#FF5722"/>
+                <stop offset="1" stopColor="#C2185B"/>
+              </linearGradient>
+            </defs>
           </svg>
         )}
-        <span>Download for {isChrome ? "Chrome" : "Firefox"}</span>
-        <Download className="w-4 h-4 group-hover:translate-y-0.5 transition-transform" />
+        <span className="font-semibold">Download for {isChrome ? "Chrome" : "Firefox"}</span>
+        <Download className="w-5 h-5 group-hover:translate-y-0.5 transition-transform" />
       </span>
     </Button>
   );
