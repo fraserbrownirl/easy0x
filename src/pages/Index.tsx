@@ -24,11 +24,23 @@ const Index = () => {
             </div>
           </div>
           <div className="flex items-center gap-3">
+            <span className="text-foreground font-semibold text-lg flex items-center gap-2 animate-fade-in">
+              Add
+              <svg 
+                className="w-5 h-5 animate-pulse" 
+                viewBox="0 0 24 24" 
+                fill="none" 
+                stroke="currentColor" 
+                strokeWidth="2"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </span>
             <a 
               href="https://chromewebstore.google.com/detail/rolod0x/dgagbbklcgogbaamlbmaaemljjfnminp"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:opacity-80 transition-opacity"
+              className="hover:opacity-80 transition-opacity hover:scale-110 transition-transform duration-200"
             >
               <img src={chromeIcon} alt="Chrome" className="w-8 h-8" />
             </a>
@@ -36,7 +48,7 @@ const Index = () => {
               href="https://addons.mozilla.org/en-GB/firefox/addon/rolod0x/"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:opacity-80 transition-opacity"
+              className="hover:opacity-80 transition-opacity hover:scale-110 transition-transform duration-200"
             >
               <img src={firefoxIcon} alt="Firefox" className="w-8 h-8" />
             </a>

@@ -22,7 +22,7 @@ const DownloadButton = ({ browser }: DownloadButtonProps) => {
         <img 
           src={isChrome ? chromeIcon : firefoxIcon} 
           alt={isChrome ? "Chrome" : "Firefox"} 
-          className="w-40 h-40"
+          className="w-16 h-16"
         />
         <span className="font-semibold text-xl">Download for {isChrome ? "Chrome" : "Firefox"}</span>
       </span>
