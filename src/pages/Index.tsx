@@ -27,7 +27,7 @@ const Index = () => {
             <span className="text-foreground font-semibold text-lg flex items-center gap-2">
               <span>Browser extensions</span>
               <svg 
-                className="w-5 h-5 animate-pulse" 
+                className="w-5 h-5 animate-fade-in-out" 
                 viewBox="0 0 24 24" 
                 fill="none" 
                 stroke="currentColor" 
@@ -35,8 +35,8 @@ const Index = () => {
                 strokeLinecap="round"
                 strokeLinejoin="round"
               >
-                <path d="M5 12h14"/>
-                <path d="M12 5l7 7-7 7"/>
+                <path d="M5 12h14" className="stroke-primary"/>
+                <path d="M12 5l7 7-7 7" className="stroke-foreground"/>
               </svg>
             </span>
             <a 
