@@ -92,7 +92,7 @@ const Index = () => {
             Browser Extensions
           </h2>
           <p className="text-lg text-muted-foreground">
-            Improve naming in seconds with our browser extension
+            Improve naming in seconds with <span className="text-primary font-semibold">Easy's</span> browser extension
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
             <DownloadButton browser="chrome" />
