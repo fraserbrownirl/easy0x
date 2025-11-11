@@ -5,6 +5,7 @@ import heroBanner from "@/assets/hero-banner.jpeg";
 import addressBook from "@/assets/usecase-addressbook.jpeg";
 import beforeImage from "@/assets/before.png";
 import afterImage from "@/assets/after.png";
+import logo from "@/assets/logo.png";
 
 const Index = () => {
   return (
@@ -12,10 +13,13 @@ const Index = () => {
       {/* Header */}
       <header className="container mx-auto px-4 py-6">
         <nav className="flex items-center justify-between">
-          <div className="text-3xl font-bold">
-            <span className="text-foreground">easy</span>
-            <span className="text-primary">0x</span>
-            <span className="text-foreground">.com</span>
+          <div className="flex items-center gap-3">
+            <img src={logo} alt="easyOx logo" className="w-12 h-12" />
+            <div className="text-3xl font-bold">
+              <span className="text-foreground">easy</span>
+              <span className="text-primary">0x</span>
+              <span className="text-foreground">.com</span>
+            </div>
           </div>
         </nav>
       </header>
@@ -44,7 +48,7 @@ const Index = () => {
             Browser Extensions
           </h2>
           <p className="text-lg text-muted-foreground">
-            Get started in seconds with our browser extension
+            Improve naming in seconds with our browser extension
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
             <DownloadButton browser="chrome" />
@@ -121,11 +125,11 @@ const Index = () => {
       <section className="container mx-auto px-4 py-16 md:py-24">
         <div className="max-w-4xl mx-auto text-center space-y-8 bg-gradient-to-r from-primary/10 to-accent/10 rounded-3xl p-12 border border-primary/20">
           <h2 className="text-3xl md:text-4xl font-bold">
-            <span className="text-foreground">Please Like and Share </span>
+            <span className="text-foreground">Share </span>
             <span className="text-foreground">easy</span>
             <span className="text-primary">0x</span>
             <span className="text-foreground">.com</span>
-            <span className="text-foreground"> on your Socials!</span>
+            <span className="text-foreground"> to Introduce Easy to your friends</span>
           </h2>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <SocialButton platform="x" />
