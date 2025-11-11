@@ -280,7 +280,7 @@ const Index = () => {
 
             <div className="mt-12 pt-8 border-t border-border text-center text-muted-foreground">
               <p>
-                &copy; 2024 easyOx. Contributed with ❤️ for Public Goods by{" "}
+                &copy; 2024 rolodOx. With ❤️ for Public Goods{" "}
                 <a 
                   href="https://adamspiers.com" 
                   target="_blank" 
@@ -289,7 +289,7 @@ const Index = () => {
                 >
                   adamspiers.com
                 </a>
-                {" | "}reimagined at{" "}
+                {" - "}
                 <a 
                   href="https://fundingthecommons.io" 
                   target="_blank" 
@@ -298,7 +298,7 @@ const Index = () => {
                 >
                   Funding the Commons
                 </a>
-                {" "}residency, BA.
+                {" "}Residency, BA 2025
               </p>
             </div>
           </div>
