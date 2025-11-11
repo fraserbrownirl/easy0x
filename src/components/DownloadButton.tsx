@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { Download } from "lucide-react";
 
 interface DownloadButtonProps {
   browser: "chrome" | "firefox";
@@ -7,15 +6,19 @@ interface DownloadButtonProps {
 
 const DownloadButton = ({ browser }: DownloadButtonProps) => {
   const isChrome = browser === "chrome";
+  const downloadUrl = isChrome 
+    ? "https://chromewebstore.google.com/detail/rolod0x/dgagbbklcgogbaamlbmaaemljjfnminp"
+    : "https://addons.mozilla.org/en-GB/firefox/addon/rolod0x/";
   
   return (
     <Button
       size="lg"
       className="group relative overflow-hidden bg-primary hover:bg-primary/90 hover:shadow-2xl transition-all duration-300 text-primary-foreground border-0 h-20 px-8 rounded-full text-xl font-semibold min-w-[320px]"
+      onClick={() => window.open(downloadUrl, '_blank')}
     >
       <span className="relative z-10 flex items-center gap-4">
         {isChrome ? (
-          <svg className="w-14 h-14" viewBox="0 0 96 96" fill="none">
+          <svg className="w-40 h-40" viewBox="0 0 96 96" fill="none">
             <circle cx="48" cy="48" r="48" fill="white"/>
             <circle cx="48" cy="48" r="44" fill="#4285F4"/>
             <circle cx="48" cy="48" r="36" fill="white"/>
@@ -25,7 +28,7 @@ const DownloadButton = ({ browser }: DownloadButtonProps) => {
             <path d="M92 48c0-23.5-20.5-44-44-44l-22 38.1H92z" fill="#FBBC04"/>
           </svg>
         ) : (
-          <svg className="w-14 h-14" viewBox="0 0 96 96" fill="none">
+          <svg className="w-40 h-40" viewBox="0 0 96 96" fill="none">
             <defs>
               <radialGradient id="firefox-gradient" cx="50%" cy="30%">
                 <stop offset="0%" stopColor="#FFEA00"/>
