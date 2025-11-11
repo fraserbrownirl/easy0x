@@ -25,9 +25,9 @@ const Index = () => {
           </div>
           <div className="flex items-center gap-3">
             <span className="text-foreground font-semibold text-lg flex items-center gap-2">
-              <span className="animate-pulse">Add</span>
+              <span>Browser extensions</span>
               <svg 
-                className="w-5 h-5 animate-bounce" 
+                className="w-5 h-5 animate-pulse" 
                 viewBox="0 0 24 24" 
                 fill="none" 
                 stroke="currentColor" 
