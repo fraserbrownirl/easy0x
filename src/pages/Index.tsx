@@ -279,7 +279,27 @@ const Index = () => {
             </div>
 
             <div className="mt-12 pt-8 border-t border-border text-center text-muted-foreground">
-              <p>&copy; 2024 easyOx. Making blockchain addresses easy to remember.</p>
+              <p>
+                &copy; 2024 easyOx. Contributed with ❤️ for Public Goods by{" "}
+                <a 
+                  href="https://adamspiers.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-primary transition-colors"
+                >
+                  adamspiers.com
+                </a>
+                {" | "}reimagined at{" "}
+                <a 
+                  href="https://fundingthecommons.io" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-primary transition-colors"
+                >
+                  Funding the Commons
+                </a>
+                {" "}residency, BA.
+              </p>
             </div>
           </div>
         </div>
