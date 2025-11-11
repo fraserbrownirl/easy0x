@@ -24,7 +24,7 @@ const Index = () => {
             </div>
           </div>
           <div className="flex items-center gap-3">
-            <span className="text-foreground font-semibold text-lg flex items-center gap-2">
+            <span className="text-foreground font-semibold text-lg hidden md:flex items-center gap-2">
               <span>Browser extensions</span>
               <svg 
                 className="w-5 h-5 animate-fade-in-out" 
@@ -45,7 +45,7 @@ const Index = () => {
               rel="noopener noreferrer"
               className="hover:opacity-80 transition-all duration-200 hover:scale-110"
             >
-              <img src={chromeIcon} alt="Chrome" className="w-8 h-8" />
+              <img src={chromeIcon} alt="Chrome" className="w-6 h-6 md:w-8 md:h-8" />
             </a>
             <a 
               href="https://addons.mozilla.org/en-GB/firefox/addon/rolod0x/"
@@ -53,7 +53,7 @@ const Index = () => {
               rel="noopener noreferrer"
               className="hover:opacity-80 transition-all duration-200 hover:scale-110"
             >
-              <img src={firefoxIcon} alt="Firefox" className="w-8 h-8" />
+              <img src={firefoxIcon} alt="Firefox" className="w-6 h-6 md:w-8 md:h-8" />
             </a>
           </div>
         </nav>
