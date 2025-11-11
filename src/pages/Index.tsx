@@ -70,7 +70,8 @@ const Index = () => {
             <img 
               src={heroBanner} 
               alt="easyOx makes blockchain addresses human-readable - comparing simple names with complex hex addresses"
-              className="w-full h-auto"
+              className="w-full h-auto max-h-[600px] object-cover"
+              loading="lazy"
             />
           </div>
         </div>
