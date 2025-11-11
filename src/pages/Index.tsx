@@ -14,7 +14,8 @@ const Index = () => {
         <nav className="flex items-center justify-between">
           <div className="text-3xl font-bold">
             <span className="text-foreground">easy</span>
-            <span className="text-primary">0x.com</span>
+            <span className="text-primary">0x</span>
+            <span className="text-foreground">.com</span>
           </div>
         </nav>
       </header>
@@ -23,8 +24,8 @@ const Index = () => {
       <section className="container mx-auto px-4 py-12 md:py-20">
         <div className="max-w-6xl mx-auto">
           <h1 className="text-3xl md:text-5xl font-bold text-center mb-8 animate-in fade-in slide-in-from-bottom-4 duration-700">
-            <span className="text-foreground">Blockchain Addresses to Names</span>{" "}
-            <span className="text-primary">in a simple Address Book</span>
+            <span className="text-foreground">Blockchain Addresses to </span>
+            <span className="text-primary">Names</span>
           </h1>
           <div className="relative rounded-2xl overflow-hidden shadow-2xl animate-in fade-in slide-in-from-bottom-4 duration-700 delay-150">
             <img 
@@ -119,12 +120,13 @@ const Index = () => {
       {/* Footer CTA */}
       <section className="container mx-auto px-4 py-16 md:py-24">
         <div className="max-w-4xl mx-auto text-center space-y-8 bg-gradient-to-r from-primary/10 to-accent/10 rounded-3xl p-12 border border-primary/20">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-            Want to help simplify blockchain?
+          <h2 className="text-3xl md:text-4xl font-bold">
+            <span className="text-foreground">Please Like and Share </span>
+            <span className="text-foreground">easy</span>
+            <span className="text-primary">0x</span>
+            <span className="text-foreground">.com</span>
+            <span className="text-foreground"> on your Socials!</span>
           </h2>
-          <p className="text-lg text-muted-foreground">
-            Like and share easyOx on your socials
-          </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <SocialButton platform="x" />
             <SocialButton platform="bluesky" />
