@@ -6,6 +6,8 @@ import addressBook from "@/assets/usecase-addressbook.jpeg";
 import beforeImage from "@/assets/before.png";
 import afterImage from "@/assets/after.png";
 import logo from "@/assets/logo.png";
+import chromeIcon from "@/assets/chrome-icon.svg";
+import firefoxIcon from "@/assets/firefox-icon.svg";
 
 const Index = () => {
   return (
@@ -28,15 +30,7 @@ const Index = () => {
               rel="noopener noreferrer"
               className="hover:opacity-80 transition-opacity"
             >
-              <svg className="w-8 h-8" viewBox="0 0 96 96" fill="none">
-                <circle cx="48" cy="48" r="48" fill="white"/>
-                <circle cx="48" cy="48" r="44" fill="#4285F4"/>
-                <circle cx="48" cy="48" r="36" fill="white"/>
-                <circle cx="48" cy="48" r="16" fill="#4285F4"/>
-                <path d="M48 4C24.5 4 4 24.5 4 48h44V4z" fill="#EA4335"/>
-                <path d="M4 48c0 23.5 20.5 44 44 44l22-38.1H4z" fill="#34A853"/>
-                <path d="M92 48c0-23.5-20.5-44-44-44l-22 38.1H92z" fill="#FBBC04"/>
-              </svg>
+              <img src={chromeIcon} alt="Chrome" className="w-8 h-8" />
             </a>
             <a 
               href="https://addons.mozilla.org/en-GB/firefox/addon/rolod0x/"
@@ -44,25 +38,7 @@ const Index = () => {
               rel="noopener noreferrer"
               className="hover:opacity-80 transition-opacity"
             >
-              <svg className="w-8 h-8" viewBox="0 0 96 96" fill="none">
-                <defs>
-                  <radialGradient id="header-firefox-gradient" cx="50%" cy="30%">
-                    <stop offset="0%" stopColor="#FFEA00"/>
-                    <stop offset="20%" stopColor="#FF9500"/>
-                    <stop offset="50%" stopColor="#FF5E00"/>
-                    <stop offset="100%" stopColor="#C92000"/>
-                  </radialGradient>
-                  <radialGradient id="header-firefox-body" cx="50%" cy="50%">
-                    <stop offset="0%" stopColor="#9059FF"/>
-                    <stop offset="100%" stopColor="#6B3EFF"/>
-                  </radialGradient>
-                </defs>
-                <circle cx="48" cy="48" r="48" fill="url(#header-firefox-gradient)"/>
-                <ellipse cx="48" cy="42" rx="32" ry="28" fill="url(#header-firefox-body)"/>
-                <ellipse cx="48" cy="38" rx="28" ry="24" fill="#FF9500"/>
-                <path d="M48 28c-11 0-20 9-20 20h40c0-11-9-20-20-20z" fill="#FFCA28"/>
-                <circle cx="48" cy="48" r="44" fill="none" stroke="#C92000" strokeWidth="2"/>
-              </svg>
+              <img src={firefoxIcon} alt="Firefox" className="w-8 h-8" />
             </a>
           </div>
         </nav>
