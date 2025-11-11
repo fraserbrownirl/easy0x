@@ -3,8 +3,7 @@ import SocialButton from "@/components/SocialButton";
 import FeatureCard from "@/components/FeatureCard";
 import heroBanner from "@/assets/hero-banner-new.jpeg";
 import addressBook from "@/assets/usecase-addressbook.jpeg";
-import beforeImage from "@/assets/before.png";
-import afterImage from "@/assets/after.png";
+import beforeAfterGif from "@/assets/before-after.gif";
 import logo from "@/assets/logo.png";
 import chromeIcon from "@/assets/chrome-icon.svg";
 import firefoxIcon from "@/assets/firefox-icon.svg";
@@ -123,33 +122,12 @@ const Index = () => {
                   <span className="text-foreground">Right-click to rename addresses</span>{" "}
                   <span className="text-accent">on sites</span>
                 </h3>
-                <div className="space-y-8">
-                  <div className="space-y-4">
-                    <div className="flex items-center gap-2 text-muted-foreground font-semibold text-lg">
-                      <span className="w-10 h-10 rounded-full bg-muted flex items-center justify-center">1</span>
-                      <span>Before</span>
-                    </div>
-                    <div className="rounded-lg overflow-hidden border border-border shadow-md">
-                      <img 
-                        src={beforeImage} 
-                        alt="Before: Etherscan showing complex hexadecimal wallet addresses that are hard to remember"
-                        className="w-full h-auto"
-                      />
-                    </div>
-                  </div>
-                  <div className="space-y-4">
-                    <div className="flex items-center gap-2 text-primary font-semibold text-lg">
-                      <span className="w-10 h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center">2</span>
-                      <span>After</span>
-                    </div>
-                    <div className="rounded-lg overflow-hidden border border-primary/50 shadow-lg ring-2 ring-primary/20">
-                      <img 
-                        src={afterImage} 
-                        alt="After: Etherscan showing renamed addresses with memorable labels like 'some wallet' and 'governance contract'"
-                        className="w-full h-auto"
-                      />
-                    </div>
-                  </div>
+                <div className="rounded-lg overflow-hidden border border-primary/50 shadow-lg ring-2 ring-primary/20">
+                  <img 
+                    src={beforeAfterGif} 
+                    alt="Before and after comparison: Etherscan showing transformation from complex hexadecimal addresses to memorable labels like 'some wallet' and 'governance contract'"
+                    className="w-full h-auto"
+                  />
                 </div>
               </div>
             </FeatureCard>
