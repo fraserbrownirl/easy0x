@@ -124,13 +124,14 @@ const Index = () => {
       {/* Footer CTA */}
       <section className="container mx-auto px-4 py-16 md:py-24">
         <div className="max-w-4xl mx-auto text-center space-y-8 bg-gradient-to-r from-primary/10 to-accent/10 rounded-3xl p-12 border border-primary/20">
-          <h2 className="text-3xl md:text-4xl font-bold">
-            <span className="text-foreground">Share </span>
-            <span className="text-foreground">easy</span>
-            <span className="text-primary">0x</span>
-            <span className="text-foreground">.com</span>
-            <span className="text-foreground"> to Introduce Easy to your friends</span>
-          </h2>
+          <div className="flex items-center justify-center gap-4">
+            <img src={logo} alt="easyOx logo" className="w-16 h-16" />
+            <h2 className="text-3xl md:text-4xl font-bold">
+              <span className="text-foreground">Introduce </span>
+              <span className="text-primary">Easy</span>
+              <span className="text-foreground"> to your friends</span>
+            </h2>
+          </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <SocialButton platform="x" />
             <SocialButton platform="bluesky" />
